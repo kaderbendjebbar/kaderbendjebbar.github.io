@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+<title> Counter</title>
+ 
+ 
+<script>
+
+  if (!localStorage.getItem('counter')){     
+      localStorage.setItem('counter',0);
+
+    }
+
+  let counter = localStorage.getItem('counter');
+
+
+  document.addEventListener('DOMContentLoaded',()=>{
+   document.querySelector('button').onclick= ()=>{
+       counter++;
+       document.querySelector('#counter').innerHTML =counter;
+       localStorage.setItem('counter',counter);
+   }
+    
+    
+
+
+    return false;
+ })
+ </script>
+</head>
+<body>
+  <h1 id = 'counter'>0</h1>
+  <button>UpCounter</button>
+</body>
+
+ </html>

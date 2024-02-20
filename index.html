@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+ <title>Document</title>
+ <link rel="stylesheet" href="facturesSonelgaz.css"> 
+</head>
+<body>
+<h1>Montant de la Facture Sonelgaz</h1>
+ <div id ="table"> 
+    <TABLE border="2"
+    summary="Cette table calcul montant de la facture
+             en fonction des quantités de consommation 
+             éléctricité , gaz et PMD (puissance mise à disposition)">
+<CAPTION><EM id ="simulation">Simulation calcul Facture(MENAGE)</EM></CAPTION>
+<!--
+<TR><TH rowspan="2"><TH colspan="2">Moyenne
+<TH rowspan="2">Yeux<BR>rouges
+-->
+
+<form>
+<TR><TH>Tarif_54M(0),Tarif_54NM(1),Tarif_53NM(2)<input id="Categorie" placeholder="54M" type="text">    
+<TR></TR>
+<TR><TH>Quantite Eléctricité_54M et 54NM(kWh) <input id="QElect" placeholder="Quantité Eléctricité " type="double"> 
+<TR><TH>Quantite Eléctricité(kWh)53NM <input id="QElectJ" placeholder="Quantité Eléctricité_Jour" type="double"> 
+<TR><TH>Quantite Eléctricité(kWh)53NM <input id="QElectN" placeholder="Quantité Eléctricité_Nuit" type="double"> 
+<TR><TH>Quantité Gaz(Th)<input id="QGaz" placeholder="Quantité Gaz" type="double"> 
+<TR><TH>PMD<input id="PMD" placeholder="PMD" type="double"> 
+<TR><TH>
+ <TR><TH>-><input id ='submit' :hover type="submit">
+ <TR><TH></TH>
+<TR><TH>Redevances fixes HT(DA) <input id="RedevenceFix" type="double">   
+<TR><TH>Montant HT (DA)<input id="MontantHT" type="double"> 
+<TR><TH>TVA a 9 %(DA)<input id="TVA9" type="double"> 
+<TR><TH>TVA a 19 %(DA)<input id="TVA19" type="double"> 
+<TR><TH>Total TVA (DA)<input id="TotalTVA" type="double">  
+<TR><TH>Taxe Habitation(DA)<input id="TaxeHabitation" type="double"> 
+<TR><TH>Montant à payer TTC(DA)<input id="MontantTTC" type="double">  
+<TR><TH>Timbre(DA)<input id="timbre" type="double"> 
+<TR><TH>Montant à payer(en espèce)(DA)<input id="MontantEspece" type="double">  
+
+<!-- <TR><TH><input id ='submit' type="submit"> -->     
+
+</form>
+</TABLE>
+</div>
+</body>
+<script src="facturesSonelgaz.js" ></script>
+</html>

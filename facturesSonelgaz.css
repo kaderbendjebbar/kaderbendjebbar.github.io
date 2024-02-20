@@ -1,0 +1,31 @@
+#table {
+  border-top-width: 4px;
+  color: blue;
+  border-left-width: 4px;
+  border-bottom-width: 4px;
+  border-right-width: 4px;
+  border-color: darkred;
+  border-spacing: 12px;
+  border-color: #a55797;
+  text-align: center;
+}
+input {
+  font-weight: bold;
+  font-size: large;
+  border-block-color: green;
+  font-style: italic;
+  border-radius: 12px;
+  background-color: #d7fffc;
+}
+caption {
+  color: #c52366;
+  font-size: large;
+  font-family: sans-serif;
+}
+input#MontantTTC,
+input#MontantEspece {
+  background: yellow;
+}
+input#submit:hover {
+  background-color: #a55797;
+}
